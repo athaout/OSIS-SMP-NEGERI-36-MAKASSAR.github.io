@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSIS SMP NEGERI 36 MAKASSAR</title>
+<link rel="stylesheet"
+href="style1.css">
+
+</head>
+
+<div id="modal" class="modal">
+
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <div class="modal-content">
+
+        <img id="modal-img" src="" alt="">
+
+        <h2 id="modal-name"></h2>
+
+        <p id="modal-jabatan"></p>
+
+    </div>
+
+</div>
+
+<script>
+
+function openModal(gambar,nama,jabatan){
+
+document.getElementById("modal").style.display="flex";
+
+document.getElementById("modal-img").src=gambar;
+
+document.getElementById("modal-name").innerHTML=nama;
+
+document.getElementById("modal-jabatan").innerHTML=jabatan;
+
+}
+
+function closeModal(){
+
+document.getElementById("modal").style.display="none";
+
+}
+
+window.onclick=function(e){
+
+let modal=document.getElementById("modal");
+
+if(e.target==modal){
+
+modal.style.display="none";
+
+}
+
+}
+
+</script>
+
+<body>
+
+<nav>
+
+<div class="logo-kiri">
+<img src="smp.png">
+<h2>SMP Negeri 36 Makassar</h2>
+</div>
+
+<ul class="menu">
+<li><a href="#beranda">Beranda</a></li>
+<li><a href="#profil">Profil</a></li>
+<li><a href="#program-kerja">Program Kerja</a></li>
+<li><a href="#galeri">Galeri</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+
+<div class="logo-kanan">
+<img src="osis.png">
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h1>Selamat Datang di <br><span>OSIS SMP Negeri 36 Makassar</span></h1>
+
+<p>
+Website resmi Organisasi Siswa Intra Sekolah SMP Negeri 36 Makassar.
+Mewujudkan siswa yang disiplin, kreatif, berprestasi,
+serta berjiwa kepemimpinan.
+</p>
+
+<a href="#beranda" class="btn">Selengkapnya</a>
+
+</section>
+
+<section id="beranda" class="Beranda">
+  <div class="latar-belakang">
+    <h1>
+        Latar Belakang
+    </h1>
+
+  <p>
+Organisasi tidak dapat berjalan tanpa adanya suatu proses perencanaan, pengorganisasian, pengarahan dan pengendalian kerja para anggota organisasi serta menggunakan seluruh sumber daya organisasi untuk mencapai tujuan yang telah ditetapkan atau lebih sering dikenal dengan istilah manajemen organisasi.
+</p>
+
+<p>
+Salah satu kegiatan utama manajemen organisasi adalah perencanaan. Sebuah organisasi tidak dapat berfungsi dengan baik tanpa adanya suatu perencanaan. Karena perencanaan adalah langkah pertama yang harus di lalui dalam suatu organisasi. Dalam hal ini, kepengurusan OSIS Periode 2026-2027 melakukan atau menjalani penindakan administratif yang pertama yaitu perencanaan atau yang disebut dengan Rapat Kerja.
+</p>
+
+<p>
+Dengan demikian diharapkan kepengurusan yang baru benar – benar mampu mengembangkan progam kerja yang efektif, efisien, dan actionable, serta sangat di butuhkan siswa/i UPT SPF SMP Negeri 36 Makassar.
+</p>
+
+</div>
+
+<h2>Visi OSIS</h2>
+
+<p>
+Mewujudkan OSIS SMPN 36 MAKASSAR yang menjunjung tinggi disiplin sebagai kunci meraih sukses 
+serta menciptakan lingkungan sekolah yang positif.
+</p>
+
+
+
+<div class="card">
+
+<div class="box">
+<h3>Disiplin</h3>
+<p>Membiasakan sikap disiplin dalam setiap kegiatan sekolah.</p>
+</div>
+
+<div class="box">
+<h3>Kepemimpinan</h3>
+<p>Melatih jiwa kepemimpinan siswa.</p>
+</div>
+
+<div class="box">
+<h3>Prestasi</h3>
+<p>Mendorong siswa meraih prestasi akademik dan non-akademik.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="profil" class="profil">
+
+ <div class="profil-grid">
+
+    <div class="profil-card" onclick="openModal('ketua.jpeg','Khanaya Putri Alya','Ketua OSIS')">
+        <img src="ketua.jpeg">
+        <h3>Khanaya Putri Alya</h3>
+        <span>Ketua OSIS</span>
+    </div>
+
+    <div class="profil-card" onclick="openModal('wakil.jpeg','Claudya Maharani','Wakil Ketua OSIS')">
+        <img src="wakil.jpeg">
+        <h3>Claudya Maharani</h3>
+        <span>Wakil Ketua</span>
+    </div>
+
+    <div class="profil-card" onclick="openModal('sekum.jpeg','Siti Aliyah','Sekretaris')">
+        <img src="sekum.jpeg">
+        <h3>Siti Aliyah</h3>
+        <span>Sekretaris</span>
+    </div>
+
+    <div class="profil-card" onclick="openModal('wasek.jpeg','Novita Purwanto','Wakil Sekretaris')">
+        <img src="wasek.jpeg">
+        <h3>Novita Purwanto</h3>
+        <span>Wakil Sekretaris</span>
+    </div>
+
+    <div class="profil-card" onclick="openModal('bendum.jpeg','Nur Rahmadani','Bendahara')">
+        <img src="bendum.jpeg">
+        <h3>Nur Rahmadani</h3>
+        <span>Bendahara</span>
+    </div>
+
+    <div class="profil-card" onclick="openModal('wadum.jpeg','Feby Nadya Fitri','Wakil Bendahara')">
+        <img src="wadum.jpeg">
+        <h3>Feby Nadya Fitri</h3>
+        <span>Wakil Bendahara</span>
+    </div>
+
+    <div class="profil-card" onclick="openModal('kerohanian.jpeg','Uni mutmainah','Bidang Kerohanian')">
+        <img src="kerohanian.jpeg">
+        <h3>Uni mutmainah</h3>
+        <span>Kerohanian</span>
+    </div>
+
+    <div class="profil-card" onclick="openModal('psdm.jpeg','Muh Nizhal Athaillah Putra','Bidang PSDM')">
+        <img src="psdm.jpeg">
+        <h3>M Nizhal Athaillah Putra</h3>
+        <span>PSDM</span>
+    </div>
+
+    <div class="profil-card" onclick="openModal('kesek.jpeg','Jesika','Bidang Kesekretariatan')">
+        <img src="kesek.jpeg">
+        <h3>Jesika</h3>
+        <span>Kesekretariatan</span>
+    </div>
+
+    <div class="profil-card" onclick="openModal('kewirus.jpeg','Nur Asyifa','Bidang Kewirausahaan')">
+        <img src="kewirus.jpeg">
+        <h3>Nur Asyifa</h3>
+        <span>Kewirausahaan</span>
+    </div>
+
+    <div class="profil-card" onclick="openModal('infokom.jpeg','Muh Naufal Athaillah Putra','Bidang Infokom')">
+        <img src="infokom.jpeg">
+        <h3>Muh Naufal Athaillah Putra</h3>
+        <span>Infokom</span>
+    </div>
+
+</div>
+
+</section>
+
+<section id="program-kerja" class="program-kerja">
+    
+</section>
+
+<section id="galeri" class="Galeri">
+    
+</section>
+
+<section id="kontak" class="kontak">
+    <h2>Hubungi Kami</h2>
+
+    <p>Jika ada pertanyaan atau ingin menghubungi OSIS SMP Negeri 36 Makassar, silakan melalui kontak berikut:</p>
+
+    <div class="kontak-info">
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:osissmpn36mksr@gmail.com">
+                osissmpn36mksr@gmail.com
+            </a>
+        </p>
+        <strong>Instagram:</strong>
+        <a href="https://www.instagram.com/osis.smpn36makassar?igsh=dHJhNDN4dGJkOW4y" target="_blank">
+              @osis.smpn36makassar
+        </a>
+    </div>
+</section>
+
+<footer>
+
+© 2026 OSIS SMP Negeri 36 Makassar
+
+</footer>
+
+</body>
+</html>
