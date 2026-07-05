@@ -332,3 +332,77 @@ footer{
         transform:scale(1);
     }
 }
+
+/* ===========================
+   Responsive HP
+=========================== */
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo-kiri h2{
+        font-size:16px;
+        text-align:center;
+    }
+
+    .hero{
+        padding:20px;
+        height:auto;
+        min-height:100vh;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero p{
+        width:100%;
+        font-size:16px;
+        line-height:28px;
+    }
+
+    .Beranda,
+    .profil,
+    .kontak{
+        padding:40px 20px;
+    }
+
+    .profil-grid{
+        grid-template-columns:1fr;
+    }
+
+    .profil-card img{
+        width:130px;
+        height:130px;
+    }
+
+    .modal-content{
+        width:90%;
+        padding:20px;
+    }
+
+    .modal-content img{
+        width:180px;
+        height:180px;
+    }
+
+    .kontak-info{
+        width:100%;
+        padding:20px;
+    }
+
+    .box{
+        padding:20px;
+    }
+
+}
