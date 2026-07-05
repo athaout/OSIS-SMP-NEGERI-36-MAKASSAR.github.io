@@ -68,8 +68,8 @@ nav{
 
     background-image:
         linear-gradient(
-            rgba(192,189,189,.5),
-            rgba(23,89,230,.384)
+            rgba(39, 107, 255, 0.5),
+            rgba(191, 194, 201, 0.384)
         ),
         url("osis fot.jpeg");
 
@@ -79,7 +79,7 @@ nav{
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:34px;
 }
 
 .hero span{
@@ -112,7 +112,7 @@ nav{
 
 /* Beranda */
 .Beranda{
-    padding:70px;
+    padding:30px;
     text-align:center;
 }
 
@@ -280,8 +280,8 @@ p{
 }
 
 .modal-content img{
-    width:300px;
-    height:300px;
+    width:180px;
+    height:180px;
     border-radius:50%;
     object-fit:cover;
     object-position:center 35%;
