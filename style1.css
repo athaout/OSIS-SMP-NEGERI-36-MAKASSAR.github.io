@@ -180,13 +180,12 @@ nav{
 }
 
 .profil-card{
-    background:#fff;
+    background:#d4af37;
     border-radius:20px;
     padding:25px;
     text-align:center;
     transition:.3s;
 }
-
 .profil-card:hover{
     transform:translateY(-10px);
 }
